@@ -4,7 +4,7 @@
     margin: 0;
     box-sizing: border-box;
 }
-/* global variables bana lo jo har jagah use hojaaye */
+
 :root {
     --primary-text-color:#183b56;
     --secondary-text-color:#577592;
@@ -34,7 +34,7 @@ ul{
 .container{
     max-width:1180px;
     margin-inline:auto;
-    /* margin inline AUTO karne se left right se evenly divide hoke center m aajayega */
+    
     overflow:hidden;
 }
 nav{
@@ -94,11 +94,11 @@ nav{
 .search-button:hover{
     background-color: var(--accent-color-dark);
 }
-/* search bar mein jo text daal rahe hain wo body wala font nahi lerha hain toh uske liye alag se font define karna padega */
+
 main{
     padding-block: 20px;
     margin-top: 80px;
-    /* image ko nav baar se neeche laane ke liye 80px ki margin top so, ab overlap ni rahega */
+    
 }
 .cards-container{
     justify-content: space-between;
@@ -114,14 +114,14 @@ main{
     cursor: pointer;
     background-color: #fff;
     overflow: hidden;
-    /* hidden krne se border radius aajayega */
+    
     transition: all 0.3s ease;
 }
 .card:hover{
     box-shadow: 1px 1px 8px #d4ecff;
     background-color: #f9fdff;
     transform: translateY(-2px);
-    /* hover karoge toh 2 px uppar chala jaayega */
+    
 }
 .card-header img{
     width: 100%;
