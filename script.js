@@ -1,7 +1,7 @@
 const API_KEY="67d968520e1c4f71b74890daa763cdfe";
 const url="https://newsapi.org/v2/everything?q=";
 window.addEventListener("load", () => fetchNews("India"));
-// window load ho toh fetchNews function call ho aur wo india lki news fetch karle
+
 function reload(){
     window.location.reload();
 }
@@ -9,9 +9,10 @@ function reload(){
 async function fetchNews(query){
     const res=await fetch(`${url}${query}&apiKey=${API_KEY}`);
     const data=await res.json();
-    // console.log(data);
+    
     bindData(data.articles);
-    // data ke andar articles aur usme array hota hain
+
+    
 }
 
 function bindData(articles) {
@@ -52,7 +53,7 @@ function onNavItemClick(id) {
     fetchNews(id);
     const navItem = document.getElementById(id);
     curSelectedNav?.classList.remove("active");
-    // agar null nahi hain toh uski class list m se active class ko remove kardo
+    
     curSelectedNav = navItem;
     curSelectedNav.classList.add("active");
 }
